@@ -1,0 +1,62 @@
+```bash
+
+#pm2 yüklemek icin nodejs in yüklü oldugundan emin olmali
+#Eger pakerletde sorun varsa düzeltme komutu kullan
+
+sudo apt --fix-broken install
+sudo apt-get autoremove # Bagli paketleri kaldirma
+sudo apt update
+sudo apt upgrade #Sistem güncelleme
+sudo apt install aptitude #Sorun yasanmaya devam ederse paket yöneticisi degistirme
+sudo aptitude install nodejs npm
+node -v
+npm -v
+
+###pm2 yükleme###
+sudo npm install pm2 -g
+pm2 --version
+pm2 start app.js
+
+
+````
+Elbette, işte PM2 hakkında bilgi veren metni Almanca olarak yazılmış hali:
+
+**PM2 (Process Manager 2) ist ein beliebtes Prozessverwaltungs- und Daemon-Tool, das zur Verwaltung und kontinuierlichen Ausführung von Node.js-Anwendungen verwendet wird. Insbesondere in Produktionsumgebungen ist es äußerst nützlich. Hier sind einige grundlegende Funktionen und Gründe, warum Sie es verwenden sollten:**
+
+1. **Dauerhaftes Ausführen (Continuous Running)**: PM2 startet Ihre Node.js-Anwendungen so, dass sie kontinuierlich laufen und sie bei auftretenden Fehlern automatisch neu startet. Dies gewährleistet einen unterbrechungsfreien Betrieb Ihrer Anwendungen.
+
+2. **Unterstützung für Mehrere Anwendungen**: Sie können mehrere Node.js-Anwendungen gleichzeitig verwalten. Dies ermöglicht es Ihnen, verschiedene Projekte auf demselben Server zu überwachen und zu verwalten.
+
+3. **Erweitertes Logging**: PM2 ermöglicht das einfache Überwachen und Verwalten von Anwendungsprotokollen. Es bietet spezielle Befehle zum Anzeigen von Fehlern und Ereignissen.
+
+4. **Clustering**: Es bietet Unterstützung für die Verteilung der Last Ihrer Node.js-Anwendung auf mehrere Prozesse. Dadurch kann Ihre Anwendung schneller ausgeführt werden, indem mehrere CPU-Kerne genutzt werden.
+
+5. **Skalierung**: Sie können Ihre Anwendung dynamisch skalieren, um mehrere Instanzen zu starten, wenn die Belastung steigt.
+
+6. **Neustart und Sicherung**: PM2 bietet die Möglichkeit, Anwendungen regelmäßig neu zu starten und Backups zu erstellen.
+
+PM2 auf einem Ubuntu-Server zu installieren und zu verwenden, können Sie die folgenden Schritte befolgen:
+
+1. **Node.js und npm installieren**: Wenn Sie es noch nicht installiert haben, müssen Sie Node.js und npm auf Ihrem Ubuntu-Server installieren, da sie für PM2 erforderlich sind.
+
+2. **PM2 Installation**: PM2 kann über npm mit folgendem Befehl installiert werden:
+
+   ```bash
+   npm install pm2 -g
+   ```
+
+3. **Anwendung mit PM2 starten**: Wechseln Sie zum Verzeichnis Ihrer Anwendung und starten Sie sie mit dem folgenden Befehl:
+
+   ```bash
+   pm2 start app.js
+   ```
+
+   Hier steht "app.js" für den Dateinamen Ihrer Node.js-Anwendung.
+
+4. **PM2-Befehle**: Sie können verschiedene PM2-Befehle verwenden, um Ihre Anwendung zu verwalten, z.B.:
+
+   - Anwendung stoppen: `pm2 stop app`
+   - Anwendung neu starten: `pm2 restart app`
+   - Protokolle anzeigen: `pm2 logs`
+
+PM2 ist ein leistungsstarkes Tool zur Verwaltung von Node.js-Anwendungen, das Ihnen ermöglicht, sie zuverlässig und einfach zu verwalten, insbesondere in Produktionsumgebungen.
