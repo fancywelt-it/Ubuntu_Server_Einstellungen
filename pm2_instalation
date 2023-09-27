@@ -19,7 +19,6 @@ pm2 start app.js
 
 
 ````
-Elbette, işte PM2 hakkında bilgi veren metni Almanca olarak yazılmış hali:
 
 **PM2 (Process Manager 2) ist ein beliebtes Prozessverwaltungs- und Daemon-Tool, das zur Verwaltung und kontinuierlichen Ausführung von Node.js-Anwendungen verwendet wird. Insbesondere in Produktionsumgebungen ist es äußerst nützlich. Hier sind einige grundlegende Funktionen und Gründe, warum Sie es verwenden sollten:**
 
