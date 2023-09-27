@@ -29,6 +29,7 @@ Um diese Anleitung erfolgreich umzusetzen, müssen die folgenden Voraussetzungen
 Im Folgenden finden Sie eine Liste von Programmen, die auf dem Ubuntu-Server installiert werden müssen, sowie die Installationsbefehle:
 
 ### Node.js
+### pm2
 
 Bitte installieren Sie die Programme mit den oben genannten Befehlen und konfigurieren Sie jedes entsprechend Ihren Anforderungen.
 
