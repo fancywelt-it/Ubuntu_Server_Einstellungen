@@ -1,0 +1,39 @@
+wenn benötigt;
+```bash
+cd ~
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/nodesource-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/nodesource-archive-keyring.gpg] https://deb.nodesource.com/node_16.x $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+````
+
+1. **Terminal öffnen (Terminali Açın)**: Zuerst öffnen Sie ein Terminalfenster auf Ihrem Ubuntu-Server.
+
+2. **Aktualisierung der Paketliste (Paket Listesini Güncelleme)**: Bevor Sie Node.js installieren, ist es eine gute Idee, die Paketliste zu aktualisieren. Dadurch stellen Sie sicher, dass die neuesten Versionen verfügbar sind. Sie können dies mit dem folgenden Befehl tun:
+
+   ```bash
+   sudo apt update
+   ```
+
+3. **Installation von Node.js (Node.js Kurulumu)**: Node.js ist im offiziellen Ubuntu-Repository verfügbar. Sie können es mit dem folgenden Befehl installieren:
+
+   ```bash
+   sudo apt install nodejs -y
+   ```
+
+   Dieser Befehl wird die neueste Version von Node.js herunterladen und installieren.
+
+4. **Installation von npm (npm Kurulumu)**: npm (Node Package Manager) wird zusammen mit Node.js installiert und wird verwendet, um Node.js-Anwendungen zu verwalten und Pakete herunterzuladen. Sie können es mit dem folgenden Befehl installieren:
+
+   ```bash
+   sudo apt install npm
+   ```
+
+5. **Überprüfung der Node.js- und npm-Versionen (Node.js ve npm Sürümlerini Kontrol Etme)**: Hier sind Befehle, mit denen Sie überprüfen können, ob die Installation erfolgreich war:
+
+   ```bash
+   node -v
+   npm -v
+   ```
+
+   Diese Befehle zeigen Ihnen die installierten Versionen von Node.js und npm an.
+
+Indem Sie diese Schritte befolgen, können Sie Node.js erfolgreich auf Ihrem Ubuntu-Server installieren. Jetzt können Sie Anwendungen mit Node.js entwickeln.
